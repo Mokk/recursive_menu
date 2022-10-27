@@ -4,7 +4,7 @@ class menu {
 		
 	function tree($id = 0, $depth = 0) {
 		$menu = array();
-		$mysqli = new mysqli('localhost','root','','mobilplan');
+		$mysqli = new mysqli('localhost','root','','');
 		$sql = "
 			SELECT id, parent_id, name, uri
 			FROM menu 
